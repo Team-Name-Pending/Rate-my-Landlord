@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
-//This file has changed!!
+var Post = require('../models/post');
+
+
 /* GET home page. */
 
 

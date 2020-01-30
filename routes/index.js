@@ -5,7 +5,7 @@ var Post = require('../models/post');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Rate-My-Landlord' });
 });
 
 /*GET register page*/
@@ -16,6 +16,11 @@ router.get('/register', function(req, res, next) {
 /*GET login page*/
 router.get('/login', function(req, res, next) {
     res.render('login');
+});
+
+/*POST review*/
+router.post('/addPost', function(req, res, next){
+	
 });
 
 module.exports = router;
